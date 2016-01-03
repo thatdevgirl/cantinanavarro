@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/styles.css" />
+
+    <title>Schedule</title>
+
+	<script src="js/vendor/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="js/vendor/underscore.min.js" type="text/javascript"></script>
+	<script src="js/vendor/backbone.min.js" type="text/javascript"></script>
+
+    <script src="js/csvToJson.js" type="text/javascript"></script>
+	<script src="js/schedule.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <article class="schedule">
+    	<section class="schedule__section--today">
+    	</section>
+
+	    <section class="schedule__section">
+	    </section>
+    </article>
+</body>
+
+<script id="schedule-template" type="text/template">
+    <p id="<%= model.id %>" class="schedule__p">
+    	<time><%= model.displayTime %></time>
+    	<span><%= model.artist %></span>
+    </p>
+</script>
+
+<script id="today-template" type="text/template">
+    <p class="today">
+    	<%= today %>
+    </p>
+</script>
+
+</html>
