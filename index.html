@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css" />
 
     <title>Schedule</title>
@@ -16,8 +18,12 @@
 
 <body>
     <article class="schedule">
-    	<section class="schedule__section--today">
-    	</section>
+        <header class="schedule__header">
+            <h1>Cantina Navarro</h1>
+
+            <section class="schedule__section--today">
+            </section>
+        </header>
 
 	    <section class="schedule__section">
 	    </section>
@@ -28,6 +34,7 @@
     <p id="<%= model.id %>" class="schedule__p">
     	<time><%= model.displayTime %></time>
     	<span><%= model.artist %></span>
+        <br />
     </p>
 </script>
 
